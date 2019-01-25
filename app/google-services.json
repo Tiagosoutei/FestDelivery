@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1035203387717",
+    "firebase_url": "https://festdelivery-a99dd.firebaseio.com",
+    "project_id": "festdelivery-a99dd",
+    "storage_bucket": "festdelivery-a99dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035203387717:android:a375ffce3c63d883",
+        "android_client_info": {
+          "package_name": "com.festdelivery.festdelivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035203387717-ke9ujm2lqfcrgu92hqf9g8tqdhrn8vca.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.festdelivery.festdelivery",
+            "certificate_hash": "cf20d4798e7a53cc1bd5b82aca683f4d042be4f2"
+          }
+        },
+        {
+          "client_id": "1035203387717-h0nsdm7r46qglfuhphat3emm6dgtq7l9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkeuaG4kdTy9LaNn0ADXgghmTgHY9-chA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035203387717-h0nsdm7r46qglfuhphat3emm6dgtq7l9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

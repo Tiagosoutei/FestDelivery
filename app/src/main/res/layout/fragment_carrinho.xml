@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main_carrinho"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".Ui.Fragment.CarrinhoFragment">
+
+    <TextView
+        android:id="@+id/nome_da_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relative_top"
+        android:layout_alignParentTop="true"
+        android:padding="8dp"
+        android:text="Carrinho de Compras"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="26sp"
+        android:textStyle="italic" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_carrrinho"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/relative_middle"
+        android:layout_below="@id/nome_da_fragment" />
+
+    <RelativeLayout
+        android:id="@+id/relative_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btncConcluirCompra"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/txt_valorTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/valorTotal"
+            android:text="Valor Total: "
+            android:textColor="#388E3C"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/valorTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="R$ 23,98"
+            android:textColor="#388E3C"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btncConcluirCompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:background="#2196F3"
+        android:text="Confirmar Compra"
+        android:textColor="#FFF"
+        android:visibility="visible" />
+
+</RelativeLayout>

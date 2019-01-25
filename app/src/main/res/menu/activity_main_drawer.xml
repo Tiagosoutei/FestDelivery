@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_destaques"
+            android:icon="@drawable/ic_menu_destaques"
+            android:title="Destaques" />
+        <item
+            android:id="@+id/nav_produtos"
+            android:icon="@drawable/ic_menu_list"
+            android:title="Todos os Produtos" />
+        <item
+            android:id="@+id/nav_carrinho"
+            android:icon="@drawable/ic_menu_carrinho"
+            android:title="Carrinho" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.festdelivery.festdelivery">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Pré-carregamento das fontes do aplicativo -->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <!-- ***************** Implementação do Firebase Cloud Messaging ***************** -->
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_icone_app" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/festdelivery_blue" />
+
+        <service android:name=".FirebaseService.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FirebaseService.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <!-- ************* ACTIVITIES SESSION ************* -->
+
+
+        <!-- Splash Activity -->
+        <activity android:name=".Ui.Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- DetalheProduto Activity -->
+        <activity
+            android:name=".Ui.Activity.DetalheProdutoActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".Ui.Activity.LoginActivity"
+            android:label="@string/title_activity_login" />
+
+        <!-- Register Activity -->
+        <activity android:name=".Ui.Activity.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:parentActivityName=".Ui.Activity.LoginActivity"/>
+
+        <!-- Pagamento Activity -->
+        <activity
+        android:name=".Ui.Activity.PagamentoActivity"
+        android:label="@string/title_activity_pagamento"
+            android:parentActivityName=".MainActivity"/>
+
+        <!-- Entrega Activity -->
+        <activity android:name=".Ui.Activity.EntregaActivity" />
+
+        <!-- Concluido Activity -->
+        <activity android:name=".Ui.Activity.ConcluidoActivity" />
+
+    </application>
+
+</manifest>

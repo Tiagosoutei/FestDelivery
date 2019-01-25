@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_pagamento"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp"
+    tools:context=".Ui.Activity.PagamentoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/txt_forma_pagamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Preencha todos Detalhes para Concluir o seu Pedido"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txt_meio_pagamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_forma_pagamento"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Selecione o meio de pagamento do pedido:"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinnerFormaPagamento"
+                style="@style/Widget.AppCompat.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_meio_pagamento"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="45dp" />
+
+            <TextView
+                android:id="@+id/txt_responsavel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerFormaPagamento"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="6dp"
+                android:text="Informe os dados do responsável pelo pedido:"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+            <ScrollView
+                android:layout_below="@id/txt_responsavel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_responsavel"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/txt_nome_ly"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_responsavel"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="6dp">
+
+                        <EditText
+                            android:id="@+id/nome"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Nome: "
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/txt_telefone_ly"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_nome_ly"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="6dp">
+
+                        <EditText
+                            android:id="@+id/telefone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Telefone: "
+                            android:inputType="phone"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/txt_data_ly"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_telefone_ly"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="6dp">
+
+
+                        <EditText
+                            android:id="@+id/data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Data de Entrega:"
+                            android:inputType="date" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/txt_hora_ly"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_data_ly"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="6dp">
+
+
+                        <EditText
+                            android:id="@+id/hora"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Hora de Entrega:"
+                            android:inputType="date" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <CheckBox
+                        android:id="@+id/chkRetirar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vou retirar na loja" />
+
+                    <Button
+                        android:id="@+id/btnOkay"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="8dp"
+                        android:background="#2196F3"
+                        android:text="Próximo"
+                        android:textColor="#FFF" />
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</ScrollView>

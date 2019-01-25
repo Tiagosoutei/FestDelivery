@@ -1,0 +1,41 @@
+//    Retrofit.Builder builder = new Retrofit.Builder()
+//            .baseUrl(FestDeliveryClient.BASE_URL)
+//            .addConverterFactory(GsonConverterFactory.create());
+//
+//
+//
+//
+//    Retrofit retrofit = builder.build();
+//
+//    FestDeliveryClient client = retrofit.create(FestDeliveryClient.class);
+//    Call<FestDeliveryRepo> call = client.reposForProduto();
+//
+//
+//
+//        call.enqueue(new Callback<FestDeliveryRepo>() {
+//        @Override
+//        public void onResponse(Call<FestDeliveryRepo> call, Response<FestDeliveryRepo> response) {
+//            int code = response.code();
+//            if (code == 200){
+//                FestDeliveryRepo repos = response.body();
+//                List<Produto> produto = repos.data;
+//
+//                Toast.makeText(SplashActivity.this, "Tamanho é: " + produto.size() , Toast.LENGTH_SHORT).show();
+//
+////                    for (Produto p : repos.data){
+////                        Log.i("DEU CERTO?: ",String.format("%s",p.getDescricao()));
+////                        Log.i("DEU CERTO!: ","-------");
+////                    }
+////                    //Toast.makeText(getBaseContext(), "Status da Conexão: " + repo.getStatus(), Toast.LENGTH_SHORT).show();
+//                //Log.i("é isso ae: ", repo.getStatus());
+//            } else {
+//                Toast.makeText(getBaseContext(), "Falha - " + String.valueOf(code), Toast.LENGTH_SHORT).show();
+//                //
+//            }
+//        }
+//
+//        @Override
+//        public void onFailure(Call<FestDeliveryRepo> call, Throwable t) {
+//            Toast.makeText(SplashActivity.this, "", Toast.LENGTH_SHORT).show();
+//        }
+//    });

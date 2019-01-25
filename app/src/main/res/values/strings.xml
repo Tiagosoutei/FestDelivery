@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">FestDelivery</string>
+    <string name="title_activity_main">FestDelivery</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Nome do Cliente</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_logar">Logar-se e Deslogar</string>
+    <string name="action_deslogar">Deslogar</string>
+    <string name="bem_vindo">Seja bem vindo ao FestDelivery!</string>
+    <string name="nome_item">Corona 355 ml</string>
+    <string name="preco_item">R$ 6,99</string>
+    <string name="title_activity_login">Login</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_sign_in_short">Entrar</string>
+    <string name="error_invalid_email">Endereço de email invalido</string>
+    <string name="error_invalid_password">Essa senha é muito curta</string>
+    <string name="error_incorrect_password">Essa senha é incorreta</string>
+    <string name="error_field_required">This campo é obrigatório</string>
+    <string name="permission_rationale">"Permissões de contatos são necessárias para fornecer as conclusões de
+        e-mail."
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_pagamento">Forma de Pagamento</string>
+    <string name="pedido_texto">Você receberá uma notificação   confirmando a disponibilidade de   entrega em no máximo 2 horas, caso   não receba o pedido será automaticamente cancelado!</string>
+    <string name="pedido_realizado">Seu pedido foi realizado!</string>
+    <string name="agradecemos">Agradecemos a confiança!</string>
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="title_activity_register">Registrar-se</string>
+    <string name="click_for_register">Clique aqui!</string>
+    <!-- Strings do Spinner de Pagamento -->
+    <string-array name="forma_pagamento">
+        <item>Dinheiro</item>
+        <item>Cartão de Crédito</item>
+    </string-array>
+
+
+</resources>

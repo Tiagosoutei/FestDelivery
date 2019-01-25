@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.Activity.ConcluidoActivity">
+
+    <TextView
+        android:id="@+id/realizado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="18dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="18dp"
+        android:text="@string/pedido_realizado"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/texto_realizado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/realizado"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/pedido_texto"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/agradecemos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/equipe_fest"
+        android:padding="25dp"
+        android:text="@string/agradecemos"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/equipe_fest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_ConcluirCompra"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50sp"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/equipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Equipe"
+            android:textColor="#000"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toStartOf="@+id/fest" />
+
+        <TextView
+            android:id="@+id/fest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/equipe"
+            android:text=" FestDelivery!"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold|italic" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_ConcluirCompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:background="#2196F3"
+        android:text="Confirmar"
+        android:textColor="#FFF" />
+
+</RelativeLayout>

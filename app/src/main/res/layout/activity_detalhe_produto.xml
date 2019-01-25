@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.Activity.DetalheProdutoActivity">
+
+    <LinearLayout
+        android:id="@+id/relative_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/relative_bottom"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp">
+
+
+        <ImageView
+            android:id="@+id/imgProduto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/sem_imagem"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sem_imagem" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_above="@+id/btnAddCarrinho"
+        android:layout_marginTop="8dp">
+
+
+        <TextView
+            android:id="@+id/produtoPreco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp"
+            android:text="@string/preco_item"
+            android:textColor="#000"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/produtoNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:autoSizeMaxTextSize="@dimen/text_margin"
+            android:text="@string/nome_item"
+            android:textColor="#000"
+            android:textSize="34sp" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnAddCarrinho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:background="#2196F3"
+        android:text="Adicionar ao carrinho"
+        android:textColor="#FFF" />
+
+</RelativeLayout>

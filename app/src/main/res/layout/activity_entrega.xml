@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ui.Activity.EntregaActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="50dp"
+        android:text="Informe os dados do endereço de entrega do pedido:"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edt_cep_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_cep"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="24dp"
+                    android:hint="CEP"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#A9A9A9"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edt_endereco_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_cep_ly">
+
+                <EditText
+                    android:id="@+id/edt_endereco"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="6dp"
+                    android:hint="Endereço"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#A9A9A9"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edt_numero_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/edt_bairro_ly"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/edt_endereco_ly">
+
+                <EditText
+                    android:id="@+id/edt_numero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Número"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#A9A9A9" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edt_bairro_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_endereco_ly"
+                android:layout_alignParentLeft="true">
+
+                <EditText
+                    android:id="@+id/edt_bairro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="6dp"
+                    android:hint="Bairro"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#A9A9A9"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edt_cidade_ly"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_bairro_ly"
+                android:layout_alignParentLeft="true">
+
+
+                <EditText
+                    android:id="@+id/edt_cidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="6dp"
+                    android:hint="Cidade"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edt_estado_ly"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_bairro_ly"
+                android:layout_alignParentRight="true">
+
+                <EditText
+                    android:id="@+id/edt_estado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="6dp"
+                    android:hint="UF"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edt_complemento_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_cidade_ly">
+
+                <EditText
+                    android:id="@+id/edt_complemento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="6dp"
+                    android:hint="Complemento (Opcional)"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#A9A9A9"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edt_referencia_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_complemento_ly"
+                android:layout_alignParentLeft="true">
+
+                <EditText
+                    android:id="@+id/edt_referencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="6dp"
+                    android:hint="Ponto de Referência (Opcional)"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#A9A9A9"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_below="@id/edt_referencia_ly"
+                android:id="@+id/btn_confirmar"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="12dp"
+                android:background="#2196F3"
+                android:text="Confirmar"
+                android:textColor="#FFFF" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
